@@ -22,8 +22,7 @@ create table theater(
 
 create table `show`(
 	show_id int primary key auto_increment,
-    name varchar(50) not null,
-    price decimal(4,2) not null
+    name varchar(50) not null
 );
 
 create table ticket(
@@ -32,6 +31,7 @@ create table ticket(
     theater_id int not null,
     show_id int not null,
     seat varchar(3) not null,
+    price decimal(4,2) not null,
 	`date` date not null,
     constraint fk_cust_cust_id
 		foreign key (cust_id)
