@@ -216,5 +216,4 @@ insert into ticket (cust_id, theater_id, show_id, seat, `date`)
 	(73,3,9,'B6','2021-12-21'),
 	(74,3,9,'B7','2021-12-21');
 
-    
-   
+drop table `rcttc-data_temp`;

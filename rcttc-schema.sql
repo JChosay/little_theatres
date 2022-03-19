@@ -9,7 +9,7 @@ create table customer(
     last_name varchar(50) not null,
 	address varchar(100) null,
     phone varchar(20) null,
-    email varchar(100) null
+    email varchar(100) not null
 );
 
 create table theater(
