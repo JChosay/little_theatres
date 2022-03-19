@@ -32,7 +32,7 @@
 --     c.address AS customer_address,
 --     ti.seat,
 --     s.name AS `show`,
---     s.price AS ticket_price,
+--     ti.price AS ticket_price,
 --     ti.date,
 --     th.name AS theater,
 --     th.address AS theater_address,
@@ -52,16 +52,16 @@
 -- GROUP BY name
 -- ORDER BY tickets DESC;
 
--- SELECT s.name AS `show`, sum(s.price) AS revenue
+-- SELECT s.name AS `show`, sum(ti.price) AS revenue
 -- FROM `show` s INNER JOIN ticket ti ON s.show_id=ti.show_id
 -- GROUP BY `show`
 -- ORDER BY revenue DESC;
 
--- SELECT t.name AS theater, sum(s.price) AS revenue
+-- SELECT t.name AS theater, sum(ti.price) AS revenue
 -- FROM theater t INNER JOIN ticket ti ON t.theater_id=ti.theater_id INNER JOIN `show` s ON s.show_id=ti.show_id
 -- GROUP BY theater;
 
--- SELECT concat(c.first_name,' ',c.last_name) AS customer, sum(s.price) AS total_sales
+-- SELECT concat(c.first_name,' ',c.last_name) AS customer, sum(ti.price) AS total_sales
 -- FROM customer c INNER JOIN ticket ti ON c.cust_id=ti.cust_id INNER JOIN `show` s ON s.show_id=ti.show_id
 -- GROUP BY customer
 -- ORDER BY total_sales DESC
