@@ -7,10 +7,10 @@
 
 -- SELECT *
 -- FROM customer
--- WHERE email LIKE '%.com';
+-- WHERE email NOT LIKE '%.com';
 
--- SELECT *
--- FROM `show`
+-- SELECT DISTINCT `show`.name, ticket.price
+-- FROM `show` INNER JOIN ticket ON ticket.show_id=`show`.show_id
 -- ORDER BY price ASC
 -- LIMIT 3;
 

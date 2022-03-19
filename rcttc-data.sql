@@ -240,3 +240,35 @@ UPDATE customer SET
 	phone = '1-801-EAT-CAKE'
 WHERE cust_id = '48';
 
+DELETE FROM ticket
+	WHERE cust_id = '65';
+    
+DELETE FROM customer
+	WHERE cust_id = '65';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '20';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '21';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '24';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '36';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '43';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '44';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '54';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '62';
+    
+DELETE FROM ticket
+	WHERE ticket_id = '63';
