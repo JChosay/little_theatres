@@ -216,4 +216,27 @@ insert into ticket (cust_id, theater_id, show_id, seat, price, `date`)
 (73,3,9,'B6','14.75','2021-12-21'),
 (74,3,9,'B7','14.75','2021-12-21');
 
-drop table `rcttc-data_temp`;
+DROP TABLE `rcttc-data_temp`;
+
+use tiny_theatre;
+
+UPDATE ticket SET
+	price = '22.25'
+WHERE show_id = 4 AND date = '2021-03-01';
+
+UPDATE ticket SET
+	seat = 'B4'
+WHERE ticket_id = 91;
+
+UPDATE ticket SET
+	seat = 'C2'
+WHERE ticket_id = 95;
+
+UPDATE ticket SET
+	seat = 'A4'
+WHERE ticket_id = 97;
+
+UPDATE customer SET
+	phone = '1-801-EAT-CAKE'
+WHERE cust_id = '48';
+
