@@ -32,7 +32,7 @@ create table ticket(
     theater_id int not null,
     show_id int not null,
     seat varchar(3) not null,
-	date date not null,
+	`date` date not null,
     constraint fk_cust_cust_id
 		foreign key (cust_id)
         references customer (cust_id),
@@ -43,3 +43,4 @@ create table ticket(
 		foreign key (show_id)
         references `show` (show_id)
 );
+    
